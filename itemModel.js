@@ -4,7 +4,7 @@ const itemSchema = new mongoose.Schema({
   itemName: {type: String, require: true},
   description: {type: String, require: true},
   locationFound:{type: String, require: true},
-  dateFound:{type: Date, default: 0},
+  dateFound:{type: Date, require: true},
   claimed: {type: Boolean, default: true}
 }, {timestamps: true })
 
